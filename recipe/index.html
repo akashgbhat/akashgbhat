@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthyeats Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Healthyeats Hub</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Recipes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                  <li><a class="dropdown-item" href="#">Lunch</a></li>
+                  <li><a class="dropdown-item" href="#">Dinner</a></li>
+                  <li><a class="dropdown-item" href="#">Snacks</a></li>
+                  <li><a class="dropdown-item" href="#">Desserts</a></li>
+                  <!-- <li><hr class="dropdown-divider" /></li> -->
+                  <li>
+                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  aria-disabled="false"
+                  >Meal Planner</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Find Recipes"
+                aria-label="Search"
+              />
+              <button onclick="display('sectionTnp')" class="btn btn-outline-success" type="submit">
+                Yummy!
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="header" class="container">
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">
+          Explore the World of <span>Healthy Eating</span>
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Discover a treasure trove of nutritious recipes and meal planning
+            tools at HealthyEats Hub. Get started on your journey to a healthier
+            lifestyle.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+              Browse Recipes
+            </button>
+            <button type="button" class="btn btn-primary btn-lg px-4">
+              Start Meal Planning
+            </button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5">
+            <img
+              src="./images/spaghetti-1932466_1280.jpg"
+              class="img-fluid border rounded-3 shadow-lg mb-4"
+              alt="Example image"
+              width="400"
+              height="200"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom" style="border-radius:5px ; padding: 3px 12px;display: inline-block; background-color: rgb(247, 247, 247);">Featured Recipes</h2>
+        
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col"><a href="capresesalad.html">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/1.png'); background-repeat: no-repeat;
+                background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Caprese Salad</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li>
+                        <small style="border-radius: 5px;
+                        padding: 3px 7px;
+                        background-color: rgb(6, 158, 6);
+                        ">Veg</small>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="shaksuka.html">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/2.png'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shakshuka</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center">
+                        <small style="border-radius: 5px;
+                        padding: 3px 7px;
+                        background-color: #f28500;">Egg</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </a>
+              </div>
+        
+              <div class="col">
+                <a href="tandoori.html">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/3.png'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tandoori Chicken</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    
+                      <li class="d-flex align-items-center">
+                        <small style="border-radius: 5px;
+                        padding: 3px 7px;
+                        background-color: #f24500;">Non Veg</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </a>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
